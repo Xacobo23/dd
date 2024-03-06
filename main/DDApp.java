@@ -22,7 +22,7 @@ public class DDApp {
 
         ArrayList<Personaje> monstruos = new ArrayList<>();
 
-        for (int i = 0; i < Math.random() * (10 - 2 + 1) + 2; i++) {
+        for (int i = 0; i < Math.random() * (9) + 2; i++) {
             monstruos.add(new Troll("Troll " + (i + 1)));
         }
 
