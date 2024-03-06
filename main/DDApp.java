@@ -25,7 +25,6 @@ public class DDApp {
         for (int i = 0; i < Math.random() * (9) + 2; i++) {
             monstruos.add(new Troll("Troll " + (i + 1)));
         }
-
         while (humanos.size() > 0 && monstruos.size() > 0) {
             // ataque humanos
             for (int i = 0; i < humanos.size(); i++) {
@@ -92,7 +91,6 @@ public class DDApp {
 
                 } catch (IndexOutOfBoundsException e) {}
             }
-
             // ataque monstruos
             for (int i = 0; i < monstruos.size(); i++) {
                 int randomHumano = (int) (Math.random() * humanos.size());
@@ -130,8 +128,6 @@ public class DDApp {
                         System.out.println("[" + humano.getSalud() + "]" + "-" + "[" + daño + "] = ["+ (humano.getSalud() - daño) + "]");
                         humano.setSalud(humano.getSalud() - daño);
                     }
-
-                    
                     if (humano.getSalud() <= 0) {
                         System.out.println(humano.getNombre() + " ha muerto");
                         humanos.remove(humano);
