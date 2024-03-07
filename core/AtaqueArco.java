@@ -1,7 +1,7 @@
 package core;
 
 public class AtaqueArco implements Ataque{
-    static private int daño = 50;
+    private int daño = 50;
     public int atacar() {
         return  (int) (Math.random() * daño * (int)(Math.random()*2));
     }

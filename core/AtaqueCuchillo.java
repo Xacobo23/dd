@@ -1,7 +1,7 @@
 package core;
 
 public class AtaqueCuchillo implements Ataque{
-    static private int daño = 25;
+    private int daño = 25;
     public int atacar() {
         return  (int) (Math.random() * daño * (int)(Math.random()*2));
     }
